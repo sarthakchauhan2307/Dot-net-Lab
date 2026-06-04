@@ -175,7 +175,6 @@ CREATE TABLE Employees (
 CREATE TABLE LeaveTypes (
     LeaveTypeID   INT PRIMARY KEY IDENTITY(1,1),
     LeaveTypeName VARCHAR(50) NOT NULL UNIQUE,
-    MaxDays       INT         NOT NULL,
     IsPaid        BIT         DEFAULT 1
 );
 ```
@@ -184,7 +183,6 @@ CREATE TABLE LeaveTypes (
 |----------------|-------------|-------------------|-----------------------------------|
 | `LeaveTypeID`  | INT         | PK, Auto-Increment | Unique leave type ID              |
 | `LeaveTypeName`| VARCHAR(50) | NOT NULL, UNIQUE  | Name of leave type                |
-| `MaxDays`      | INT         | NOT NULL          | Maximum days allowed per year     |
 | `IsPaid`       | BIT         | DEFAULT 1         | `1` = Paid Leave, `0` = Unpaid    |
 
 ---
