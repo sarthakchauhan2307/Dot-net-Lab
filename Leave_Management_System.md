@@ -42,10 +42,6 @@ USE LeaveManagementSystem;
 
 ---
 
-## ER Diagram
-
-> Rendered using [Mermaid](https://mermaid.js.org/) — GitHub renders this automatically.
-
 ```mermaid
 erDiagram
     DEPARTMENTS {
@@ -98,9 +94,8 @@ erDiagram
     LEAVETYPES ||--o{ LEAVEREQUESTS : "categorizes"
     EMPLOYEES ||--o{ LEAVEBALANCES : "has"
     LEAVETYPES ||--o{ LEAVEBALANCES : "tracks"
-```
+` ``
 
----
 
 ## Table Relationships
 
