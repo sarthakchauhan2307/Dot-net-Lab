@@ -719,27 +719,11 @@ END
 
 ---
 
-## Leave Request Flow
 
-```mermaid
-flowchart TD
-    A([Employee]) -->|sp_ApplyLeave| B[LeaveRequest Created\nStatus: Pending]
-    B --> C{Admin Reviews}
-    C -->|sp_ApproveLeave| D[Status: Approved\n+ UsedLeave Updated]
-    C -->|sp_RejectLeave| E[Status: Rejected\nBalance Unchanged]
-    B -->|sp_GetPendingLeaves| F[Pending Dashboard]
-    D -->|RemainingLeave auto-recalculates| G[(LeaveBalances)]
-```
 
 ---
 
-## Procedure Count Summary
 
-| Category               | Count  |
-|------------------------|--------|
-| CRUD Procedures        | 20     |
-| Additional / Reporting | 6      |
-| **Total**              | **26** |
 
 ### Breakdown by Table
 
