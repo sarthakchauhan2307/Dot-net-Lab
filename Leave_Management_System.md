@@ -42,6 +42,8 @@ USE LeaveManagementSystem;
 
 ---
 
+## ER Diagram
+
 ```mermaid
 erDiagram
     DEPARTMENTS {
@@ -94,10 +96,9 @@ erDiagram
     LEAVETYPES ||--o{ LEAVEREQUESTS : "categorizes"
     EMPLOYEES ||--o{ LEAVEBALANCES : "has"
     LEAVETYPES ||--o{ LEAVEBALANCES : "tracks"
-` ``
-
 ```
-## Table Relationships
+
+---## Table Relationships
 
 | Parent Table   | Child Table      | Relationship Type | Description                         |
 |----------------|------------------|-------------------|-------------------------------------|
