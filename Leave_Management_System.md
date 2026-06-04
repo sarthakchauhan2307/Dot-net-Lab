@@ -96,7 +96,7 @@ erDiagram
     LEAVETYPES ||--o{ LEAVEBALANCES : "tracks"
 ` ``
 
-
+```
 ## Table Relationships
 
 | Parent Table   | Child Table      | Relationship Type | Description                         |
